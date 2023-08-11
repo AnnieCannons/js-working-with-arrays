@@ -5,11 +5,13 @@
 // Go to a website of your choosing (a news site or a shopping site). Find examples of data that might be stored as arrays. Provide a description of the data below. 
 
 
-
+//It looks like Etsy uses arrays, similarly to AirBnb or Amazon to store certain data. Items for sale in the online store are arranged in cards, and contain information like item name, product rating, shipping, price. Some others mentioned in the group included Shein, Aliexpress, and Temu. They all seem to follow similar patterns.
 
 
 /********************** Exercise 2 **********************/
 // Create an array of books to be sold in an online store. 
+
+let booksForSale = ["Man's Search for Meaning", "Milk & Honey", "Sister Outsider", "The Prophet"];
 
 
 
@@ -17,21 +19,33 @@
 const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
 
 // For the above array, log the string "bread" to the console.
+console.log(shopping[0]);
 
 
 // After the following code is run, what will happen? Console log the new array.
 shopping[0] = "rice";
-
+console.log(shopping);
+//"rice is added to the beginning of the list at index 0, replacing "bread"
 
 // Try changing the value "cheese" to "vegetables" using an index.
 
+shopping[2] = "vegetables";
+console.log(shopping);
+
+
 // Log the value at index 2. Note that it is NOT the second value! Why is that?
+console.log(shopping[2]);
+//The value at index 2 is vegetables, because the count starts at 0
 
 // Log the last value WITHOUT using a set number. That is, do NOT write: `shopping[4]`. You can use the `.length` to figure out what the last index is!
+
+console.log(shopping.length - 1);
+// this logs the value 4, which is noodles
 
 // Now write the same code in the square brackets, using the `.length` property to calculate the last index, only with the `gems` array below instead of `shopping`. The solution should give you the last value in ANY array!
 
 const gems = ["ruby", "saphhire", "pearl", "steven", "amethyst", "garnet", "lapis lazuli", "peridot"]
+console.log(gems.length - 1);
 
 
 /********************** Exercise 4 **********************/
@@ -40,18 +54,25 @@ const cities = ["Oakland", "New York"];
 
 
 // Use an array method to add Memphis to the END of the array.
+cities.push("Memphis");
 
 // Use an array method to add Phoenix to the END of the array.
+cities.push("Phoenix");
 
 // Use an array method to add Atlanta to the START of the array.
+cities.unshift("Atlanta");
 
 // Use an array method to add Chicago and Denver to the END of the array with one method call.
+cities.push("Chicago", "Denver");
 
 // Use an array method to remove the FIRST element of the array.
+cities.shift();
 
 // Use an array method to remove the LAST element of the array.
+cities.pop();
 
 // Log the final array to the console. It should look like this: ["Oakland", "New York", "Memphis", "Phoenix", "Chicago"]
+console.log(cities);
 
 
 /********************** Exercise 5 **********************/
