@@ -112,24 +112,28 @@ console.log(userMember[2][0]);
 // How would you use that array to find the letter J? Remember that you can use indexes with arrays AND strings!
 
 
+
+
+
 /********************** Exercise 8 **********************/
 
 const cityString = "Detroit,Atlanta,Birmingham,New Haven,Dallas,San Diego,Portland";
 
 // Now let's split the array at each comma. How would you create an array with each of the cities as a separate value?
-
+const cityStrings = cityString.split(",");
+console.log(cityStrings);
 
 // What is the length of the new array?
-
+console.log(cityString.length);
 
 // Log the array to the console
-
+console.log(cityStrings);
 
 // How would you log the last city in the array to the console?
-
+console.log(cityStrings.slice(-1));
 
 // Using the .join() method, how would you turn the list of cities back into a string with spaces after the commas?
-
+console.log(cityStrings.join(', '));
 
 /********************** Exercise 9 **********************/
 
