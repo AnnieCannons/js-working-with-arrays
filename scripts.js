@@ -39,13 +39,13 @@ console.log(shopping[2]);
 "Because the beginning index value is 0, at value 1"
 
 // Log the last value WITHOUT using a set number. That is, do NOT write: `shopping[4]`. You can use the `.length` to figure out what the last index is!
-console.log(shopping.length);
+console.log(shopping[shopping.length -1]);
 
 // Now write the same code in the square brackets, using the `.length` property to calculate the last index, only with the `gems` array below instead of `shopping`. The solution should give you the last value in ANY array!
 
 const gems = ["ruby", "saphhire", "pearl", "steven", "amethyst", "garnet", "lapis lazuli", "peridot"]
 
-console.log(gems.length);
+console.log(gems[gems.length -1]);
 
 /********************** Exercise 4 **********************/
 
@@ -137,20 +137,26 @@ console.log(cityStrings.join(', '));
 
 /********************** Exercise 9 **********************/
 
-
 let myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
 
 // Convert the string into an array, removing the + characters in the process. Save the result in a variable called myArray.
+ let myArray = myString.split("+");
 
+ //= myString.replaceAll("+"," ");
+console.log(myArray);
 
 // Store the length of the array in a variable called arrayLength.
-
+arrayLength = myArray.length
+console.log(arrayLength);
 
 // Store the last item in the array in a variable called lastItem.
-
+lastItem = myArray.slice(-1);
+console.log(lastItem);
 
 // Remove the last item in the array.
-
-
+myArray.pop();
+console.log(myArray);
 
 // Add two new names to the end of the array.
+myArray.push("Geraldine", "Rupert");
+console.log(myArray);
