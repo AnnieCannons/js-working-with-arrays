@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Working With Arrays</title>
-    <script src=""scripts.js"></script>
+    <script src="" scripts.js"></script>
 
-     <link rel="stylesheet" src=""</style>
+    <link rel="stylesheet" src="" </style>
 </head>
-<body>
-    
-<!-- template for each exercise -->
 
-<!-- exercise # -->
-<!-- <button onclick="myFunction#()">Exercise#</button>
+<body>
+
+    <!-- template for each exercise -->
+
+    <!-- exercise # -->
+    <!-- <button onclick="myFunction#()">Exercise#</button>
 <p id="exercise1"></p>
 <script>
 function myFunction# () {
@@ -25,162 +27,163 @@ document.getElementById("exercise#").innerHTML = text;
 }
 </script> -->
 
-<h3>Answers</h3>
+    <h3>Answers</h3>
 
-<!-- exercise 1 -->
+    <!-- exercise 1 -->
 
-<button onclick="myFunction1()">Exercise 1</button>
-<p id="exercise1"></p>
-<script>
-function myFunction1 () {
-let text; 
-text = "An simple  example of what and why to use an array: on any given website, when clicking something that lists a group of items that would fall under that topic/subject - an arary would be used to group all these items together under that specific item name to be called upon later by clicking whatever button/element pulls up the those variables";
-console.log("Exercise 1: " + text);
-document.getElementById("exercise1").innerHTML = text;
-}
-</script>
+    <button onclick="myFunction1()">Exercise 1</button>
+    <p id="exercise1"></p>
+    <script>
+        function myFunction1() {
+            let text;
+            text = "An simple  example of what and why to use an array: on any given website, when clicking something that lists a group of items that would fall under that topic/subject - an arary would be used to group all these items together under that specific item name to be called upon later by clicking whatever button/element pulls up the those variables";
+            console.log("Exercise 1: " + text);
+            document.getElementById("exercise1").innerHTML = text;
+        }
+    </script>
 
-<!-- exercise 2 -->
-<button onclick="myFunction2()">Exercise 2</button>
-<p id="exercise2"></p>
-<script>
-function myFunction2 () {
-let text;
-const books = ["who", "what", "when", "where", "how", "why"];
-text = books.join(' ' + '<br />');
-console.log("Exercise 2: " + books.join(' '));
-document.getElementById("exercise2").innerHTML = text;
-}
-</script>
+    <!-- exercise 2 -->
+    <button onclick="myFunction2()">Exercise 2</button>
+    <p id="exercise2"></p>
+    <script>
+        function myFunction2() {
+            let text;
+            const books = ["who", "what", "when", "where", "how", "why"];
+            text = books.join(' ' + '<br />');
+            console.log("Exercise 2: " + books.join(' '));
+            document.getElementById("exercise2").innerHTML = text;
+        }
+    </script>
 
-<!-- exercise 3 -->
-<button onclick="myFunction3()">Exercise 3</button>
-<p id="exercise3"></p>
-<script>
-function myFunction3 () {
-let text;
-const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
-const gems = ["ruby", "saphhire", "pearl", "steven", "amethyst", "garnet", "lapis lazuli", "peridot"];
-shopping[0] = "rice";
-shopping[2] = "vegetables";
-text = "Prior to changing shopping[0] to rice, shopping[0]= bread " + '<br />'  + shopping[0] + '<br />' + shopping[2] + '<br />' + shopping[shopping.length -1] + '<br />' + gems[gems.length -1] + "   ";
-console.log("Exercise 3: Prior to changing shopping[0] to rice, shopping[0]= bread " + ' | '  + shopping[0] + ' |  ' + shopping[2] + ' | ' + shopping[shopping.length -1] + ' | ' + gems[gems.length -1]);
-document.getElementById("exercise3").innerHTML = text;
-}
-</script>
+    <!-- exercise 3 -->
+    <button onclick="myFunction3()">Exercise 3</button>
+    <p id="exercise3"></p>
+    <script>
+        function myFunction3() {
+            let text;
+            const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
+            const gems = ["ruby", "saphhire", "pearl", "steven", "amethyst", "garnet", "lapis lazuli", "peridot"];
+            shopping[0] = "rice";
+            shopping[2] = "vegetables";
+            text = "Prior to changing shopping[0] to rice, shopping[0]= bread " + '<br />' + shopping[0] + '<br />' + shopping[2] + '<br />' + shopping[shopping.length - 1] + '<br />' + gems[gems.length - 1] + "   ";
+            console.log("Exercise 3: Prior to changing shopping[0] to rice, shopping[0]= bread " + ' | ' + shopping[0] + ' |  ' + shopping[2] + ' | ' + shopping[shopping.length - 1] + ' | ' + gems[gems.length - 1]);
+            document.getElementById("exercise3").innerHTML = text;
+        }
+    </script>
 
-<!-- Exercise 4 -->
+    <!-- Exercise 4 -->
 
-<button onclick="myFunction4()">Exercise 4</button>
-<p id="exercise4"></p>
-<script>
-function myFunction4 () {
-let text;
-const cities = ["Oakland", "New York"];
-cities.push("Memphis");
-cities.push("Phoenex");
-cities.unshift('Atlanta');
-cities.push('Chicago', 'Denver');
-cities.shift();
-cities.pop();
-let city = cities.join('<br /> ');
-text = city + ' <br /> <br />' + " and reverse is" + '<br />  <br />' + cities.reverse().join('<br /> ');
-console.log("Exercise 5: " + city + " and reverse is " + cities.reverse().join(', ') + "!");
-document.getElementById("exercise4").innerHTML = text;
-}
-</script> 
+    <button onclick="myFunction4()">Exercise 4</button>
+    <p id="exercise4"></p>
+    <script>
+        function myFunction4() {
+            let text;
+            const cities = ["Oakland", "New York"];
+            cities.push("Memphis");
+            cities.push("Phoenex");
+            cities.unshift('Atlanta');
+            cities.push('Chicago', 'Denver');
+            cities.shift();
+            cities.pop();
+            let city = cities.join('<br /> ');
+            text = city + ' <br /> <br />' + " and reverse is" + '<br />  <br />' + cities.reverse().join('<br /> ');
+            console.log("Exercise 5: " + city + " and reverse is " + cities.reverse().join(', ') + "!");
+            document.getElementById("exercise4").innerHTML = text;
+        }
+    </script>
 
-<!-- Exercise 5 -->
+    <!-- Exercise 5 -->
 
-<button onclick="myFunction5()">Exercise 5</button>
-<p id="exercise5"></p>
-<script>
-function myFunction5 () {
-let text;
-const colors = ["red", "green", "blue", "yellow"];
-let colors1 = colors[0] + " " + colors[1] + " " + colors[2]
-let colors2 = colors[1] + " " + colors[2] + " " + colors[3];
-let colors3 = colors[0] + " " + colors[1];
-text = colors1 + '<br />' + colors2 + '<br />' + colors3;
-console.log("Exercise 6: " + colors1 + " | " + colors2 + " | " + colors3);
-document.getElementById("exercise5").innerHTML = text;
-
-
-}
-
-</script> 
-
-<!-- Exercse 6 -->
-
-<button onclick="myFunction6()">Exercise 6</button>
-<p id="exercise6"></p>
-<script>
-function myFunction6() {
-let text;
-const numbers = [5, 1, 8, 3, 2, 7, 4, 6, 9];
-text = numbers.sort().join('<br /> ');
-console.log('Exercise 6: ' + numbers.sort().join(' '));
-document.getElementById("exercise6").innerHTML = text;
-}
-</script>
+    <button onclick="myFunction5()">Exercise 5</button>
+    <p id="exercise5"></p>
+    <script>
+        function myFunction5() {
+            let text;
+            const colors = ["red", "green", "blue", "yellow"];
+            let colors1 = colors[0] + " " + colors[1] + " " + colors[2]
+            let colors2 = colors[1] + " " + colors[2] + " " + colors[3];
+            let colors3 = colors[0] + " " + colors[1];
+            text = colors1 + '<br />' + colors2 + '<br />' + colors3;
+            console.log("Exercise 6: " + colors1 + " | " + colors2 + " | " + colors3);
+            document.getElementById("exercise5").innerHTML = text;
 
 
-<!-- Exercise 7 -->
+        }
 
-<button onclick="myFunction7()">Exercise 7</button>
-<p id="exercise7"></p>
+    </script>
 
-<script>
-function myFunction7() {
-let text;
-const userMember = ["Dava Sorbel", 795, ['Python', 'JavaScript', 'Ruby']];
-let py = userMember[2][0];
-let next = userMember[2][1].at(0);
-text = py + '<br />' + next;
-console.log(py + ' ' + next );
-document.getElementById("exercise7").innerHTML = text;
-}
-</script>
+    <!-- Exercse 6 -->
 
-<!-- Exercise 8 -->
-
-<button onclick="myFunction8()">Exercise 8</button>
-<p id="exercise8"></p>
-
-<script>
-function myFunction8() {
-let text;
-const cityString = "Detroit,Atlanta,Birmingham,New Haven,Dallas,San Diego,Portland";
-let arr = cityString.split(",");
-text = 'Array: ' + arr + '<br /> Array length: ' + arr.length + '<br /> Last city: ' + arr[arr.length -1] + '<br /> To appear with spaces:  ' + arr.join(', ');
-
-console.log('Array: ' + arr + '  Array length: ' + arr.length + '  Last city: ' + arr[arr.length -1] + ' To appear with spaces:  ' + arr.join(', '));
-
-document.getElementById("exercise8").innerHTML = text;
-}
-</script>
+    <button onclick="myFunction6()">Exercise 6</button>
+    <p id="exercise6"></p>
+    <script>
+        function myFunction6() {
+            let text;
+            const numbers = [5, 1, 8, 3, 2, 7, 4, 6, 9];
+            text = numbers.sort().join('<br /> ');
+            console.log('Exercise 6: ' + numbers.sort().join(' '));
+            document.getElementById("exercise6").innerHTML = text;
+        }
+    </script>
 
 
-<!-- Exercise 9 -->
+    <!-- Exercise 7 -->
 
-<button onclick="myFunction9()">Exercise 9</button>
-<p id="exercise9"></p>
+    <button onclick="myFunction7()">Exercise 7</button>
+    <p id="exercise7"></p>
 
-<script>
-function myFunction9() {
-let text;
-let myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
-let myArray = myString.split("+");
-let arrayLength = myArray.length;
-let lastItem = myArray[myArray.length -1];
-myArray.pop();
-myArray.push('Han', 'Tek');
+    <script>
+        function myFunction7() {
+            let text;
+            const userMember = ["Dava Sorbel", 795, ['Python', 'JavaScript', 'Ruby']];
+            let py = userMember[2][0];
+            let next = userMember[2][1].at(0);
+            text = py + '<br />' + next;
+            console.log('Exercise 7: ' + py + ' ' + next);
+            document.getElementById("exercise7").innerHTML = text;
+        }
+    </script>
 
-text = 'myArray: ' + myArray + '<br /> arrayLength: ' + arrayLength + '<br /> lastItem: ' + lastItem + '<br /> final result: ' + myArray.join(', ') + '<br /> new arrayLength: ' + myArray.length + '<br /> new lastItem: ' + myArray[myArray.length -1];
-console.log('myArray: ' + myArray + '  arrayLength: ' + arrayLength + '  lastItem: ' + lastItem + '  final result: ' + myArray.join(', ') + '  new arrayLength: ' + myArray.length + '  new lastItem: ' + myArray[myArray.length -1]);
-document.getElementById("exercise9").innerHTML = text;
-}    
-</script>
+    <!-- Exercise 8 -->
+
+    <button onclick="myFunction8()">Exercise 8</button>
+    <p id="exercise8"></p>
+
+    <script>
+        function myFunction8() {
+            let text;
+            const cityString = "Detroit,Atlanta,Birmingham,New Haven,Dallas,San Diego,Portland";
+            let arr = cityString.split(",");
+            text = 'Array: ' + arr + '<br /> Array length: ' + arr.length + '<br /> Last city: ' + arr[arr.length - 1] + '<br /> To appear with spaces:  ' + arr.join(', ');
+
+            console.log('Exercise 8: Array: ' + arr + '  Array length: ' + arr.length + '  Last city: ' + arr[arr.length - 1] + ' To appear with spaces:  ' + arr.join(', '));
+
+            document.getElementById("exercise8").innerHTML = text;
+        }
+    </script>
+
+
+    <!-- Exercise 9 -->
+
+    <button onclick="myFunction9()">Exercise 9</button>
+    <p id="exercise9"></p>
+
+    <script>
+        function myFunction9() {
+            let text;
+            let myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
+            let myArray = myString.split("+");
+            let arrayLength = myArray.length;
+            let lastItem = myArray[myArray.length - 1];
+            myArray.pop();
+            myArray.push('Han', 'Tek');
+
+            text = 'myArray: ' + myArray + '<br /> arrayLength: ' + arrayLength + '<br /> lastItem: ' + lastItem + '<br /> final result: ' + myArray.join(', ') + '<br /> new arrayLength: ' + myArray.length + '<br /> new lastItem: ' + myArray[myArray.length - 1];
+            console.log('Exercise 9: myArray: ' + myArray + '  arrayLength: ' + arrayLength + '  lastItem: ' + lastItem + '  final result: ' + myArray.join(', ') + '  new arrayLength: ' + myArray.length + '  new lastItem: ' + myArray[myArray.length - 1]);
+            document.getElementById("exercise9").innerHTML = text;
+        }    
+    </script>
 
 </body>
+
 </html>
