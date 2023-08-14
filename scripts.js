@@ -5,18 +5,20 @@
 // Go to a website of your choosing (a news site or a shopping site). Find examples of data that might be stored as arrays. Provide a description of the data below. 
 
 
-
+// answer: on any given website, when clicking something that lists a group of items that would fall under that topic/subject - an arary would be used to group all these items together under that specific item name to be called upon later by clicking whatever button/element pulls up the array variables 
 
 
 /********************** Exercise 2 **********************/
 // Create an array of books to be sold in an online store. 
 
+const books = ["who", "what", "when", "where", "how", "why"]
 
 
 /********************** Exercise 3 **********************/
 const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
 
 // For the above array, log the string "bread" to the console.
+
 
 
 // After the following code is run, what will happen? Console log the new array.
@@ -38,7 +40,7 @@ const gems = ["ruby", "saphhire", "pearl", "steven", "amethyst", "garnet", "lapi
 
 const cities = ["Oakland", "New York"];
 
-
+cities.push("Memphis");
 // Use an array method to add Memphis to the END of the array.
 
 // Use an array method to add Phoenix to the END of the array.
@@ -85,7 +87,7 @@ const userMember = ["Dava Sorbel", 795, ['Python', 'JavaScript', 'Ruby']];
 /********************** Exercise 8 **********************/
 
 const cityString = "Detroit,Atlanta,Birmingham,New Haven,Dallas,San Diego,Portland";
-
+;
 // Now let's split the array at each comma. How would you create an array with each of the cities as a separate value?
 
 
