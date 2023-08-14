@@ -1,11 +1,10 @@
 // FOR ALL EXERCISES WHERE YOU WORK WITH AN ARRAY, PRINT THE RESULTS AT EACH STEP!
 
+"answer viewable on index.html page / live html page"
+
 /********************** Exercise 1 **********************/
 
 // Go to a website of your choosing (a news site or a shopping site). Find examples of data that might be stored as arrays. Provide a description of the data below. 
-
-
-// answer: on any given website, when clicking something that lists a group of items that would fall under that topic/subject - an arary would be used to group all these items together under that specific item name to be called upon later by clicking whatever button/element pulls up the array variables 
 
 
 /********************** Exercise 2 **********************/
