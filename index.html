@@ -63,9 +63,10 @@ document.getElementById("exercise#").innerHTML = text;
             let text;
             const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
             const gems = ["ruby", "saphhire", "pearl", "steven", "amethyst", "garnet", "lapis lazuli", "peridot"];
-            shopping[0] = "rice";
-            shopping[2] = "vegetables";
-            text = "Prior to changing shopping[0] to rice, shopping[0]= bread " + '<br />' + shopping[0] + '<br />' + shopping[2] + '<br />' + shopping[shopping.length - 1] + '<br />' + gems[gems.length - 1] + "   ";
+            let shopping2 = ["bread", "milk", "cheese", "hummus", "noodles"];
+            shopping2[0] = "rice";
+            shopping2[2] = "vegetables";
+            text = "string 'bread': " + shopping[0] + '<br /> The new log when changing bread to rice and cheese to vegetables: ' + shopping2.join(', ')  + '<br /> last item: ' + shopping[shopping.length - 1] + '<br /> last item of gems: ' + gems[gems.length - 1] + "   ";
             console.log("Exercise 3: Prior to changing shopping[0] to rice, shopping[0]= bread " + ' | ' + shopping[0] + ' |  ' + shopping[2] + ' | ' + shopping[shopping.length - 1] + ' | ' + gems[gems.length - 1]);
             document.getElementById("exercise3").innerHTML = text;
         }
