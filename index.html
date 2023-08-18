@@ -102,11 +102,9 @@ document.getElementById("exercise#").innerHTML = text;
         function myFunction5() {
             let text;
             const colors = ["red", "green", "blue", "yellow"];
-            let colors1 = colors[0] + " " + colors[1] + " " + colors[2]
-            let colors2 = colors[1] + " " + colors[2] + " " + colors[3];
-            let colors3 = colors[0] + " " + colors[1];
-            text = colors1 + '<br />' + colors2 + '<br />' + colors3;
-            console.log("Exercise 6: " + colors1 + " | " + colors2 + " | " + colors3);
+
+            text = '<br />' + colors.slice(0,3) + '<br />' + colors.slice(1) + '<br />' +  colors.slice(0,2);
+            console.log("Exercise 5: " , colors.slice(0,3) , " | " + colors.slice(1) + " | " + colors.slice(0,2));
             document.getElementById("exercise5").innerHTML = text;
 
 
